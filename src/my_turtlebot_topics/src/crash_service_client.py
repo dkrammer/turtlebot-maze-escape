@@ -18,7 +18,7 @@ crash_service_connection = rospy.ServiceProxy('/crash_service', Trigger)
 # Create an object of type TriggerRequest()
 crash_object = TriggerRequest()
 
-# Send through the connection the name of the trajectory to be executed by the robot
+# Get result by passing TriggerRequest oject through the connection
 result = crash_service_connection(crash_object)
 
 # Print the result given by the service called
