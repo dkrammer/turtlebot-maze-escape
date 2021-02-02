@@ -1,0 +1,15 @@
+<launch>
+  
+  <node pkg ="my_turtlebot_topics"
+        type="crash_service_server.py"
+        name="crash_service_server"
+        output="screen">
+  </node>
+
+  <node pkg ="my_turtlebot_main"
+        type="turtlebot_main.py"
+        name="turtlebot_main_node"
+        output="screen">
+  </node>
+
+</launch>
