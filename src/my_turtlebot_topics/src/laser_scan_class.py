@@ -8,7 +8,7 @@ class LaserScanClass():
     def __init__(self):
         self.laser_sub = rospy.Subscriber('/kobuki/laser/scan', LaserScan, self.callback)
         self.scan = LaserScan()
-        self.crash_threshold = 2
+        self.crash_threshold = 2 #2 metres
         self.crashing = False
         self.turn_direction = "straight"
         self.exited_maze = False
